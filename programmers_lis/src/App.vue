@@ -2,30 +2,13 @@
   <div id="app">
     
     <header>
-      АРМ фрилансера
+      <img
+      src="@/components/icons/10752058.png" width="30px" height="30px" color="white" /> АРМ фрилансера
     </header>
 
     <!-- Здесь отображаются страницы -->
     <main>
-      <nav>
-        <ul>
-          <li>
-            <router-link to="/">Услуги</router-link>
-          </li>
-          <li>
-            <router-link to="/projects">Анализ проектов</router-link>
-          </li>
-          <li>
-            <router-link to="/about">Обо мне</router-link>
-          </li>
-          <li>
-            <router-link to="/contact">Контактная информация</router-link>
-          </li>
-          <li>
-            <router-link to="/order">Заказать проект</router-link>
-          </li>
-        </ul>
-      </nav>
+
       <router-view></router-view>
     </main>
   </div>
@@ -44,9 +27,12 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+img {
+    background-color: white;
+}
 
 header {
-  background-color: #000;
+  background-color: #000000;
   color: #fff;
   padding: 20px;
   font-size: 25px;

@@ -1,13 +1,18 @@
 <template>
-    <div>
-      <h1>Админка</h1>
-      <p>Здесь можно управлять контентом.</p>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'Admin',
-  };
-  </script>
-  <style></style>
+
+    <!-- Контент админ-панели -->
+    <AdminPanelContent />
+
+</template>
+
+<script>
+import Auth from './Auth.vue';
+import AdminPanelContent from './AdminPanelContent.vue';
+
+export default {
+  components: {
+    Auth,
+    AdminPanelContent
+  }
+};
+</script>

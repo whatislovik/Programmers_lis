@@ -5,7 +5,7 @@
         <div class="service-card" v-for="(service, index) in services" :key="index">
           <div class="service-image">
             <!-- Здесь будет картинка услуги -->
-            <img src="https://via.placeholder.com/150" alt="Service image" />
+            <img :src="'/src/logos/services/' + service.uri" alt="Изображение услуги" />
           </div>
           <div class="service-info">
             <h2>{{ service.name }}</h2>
